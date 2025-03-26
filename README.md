@@ -48,14 +48,4 @@ java -cp target/classes com.finance.Main
 ```bash
 mvn test
 ```
-## 🛠 Tech Stack
-Java 22
-
-Maven
-
-JUnit 5, Mockito
-
-GitHub Actions CI
-
-Clean Architecture Principles (SRP, DIP, etc.)
 
