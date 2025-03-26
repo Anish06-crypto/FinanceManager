@@ -42,4 +42,20 @@ Built with clean layering and full separation of concerns.
 
 ```bash
 mvn clean compile
-java -cp target/classes com.finance.Main
+java -cp target/classes com.finance.Main 
+```
+## 🚀 To run tests
+```bash
+mvn test
+```
+## 🛠 Tech Stack
+Java 22
+
+Maven
+
+JUnit 5, Mockito
+
+GitHub Actions CI
+
+Clean Architecture Principles (SRP, DIP, etc.)
+
