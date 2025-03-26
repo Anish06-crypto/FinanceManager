@@ -1,35 +1,45 @@
-# FinanceManager 💰
+# 💰 FinanceManager – Java Console App
 
-A console-based Java application for managing personal finance — built using clean architecture principles.
+A clean-architecture Java application to manage personal finance via CLI. Built with modular design, strategy patterns, and full test automation.
 
-## Features
+---
 
-- Create/delete accounts
-- Record income/expense transactions
-- List, filter, and summarize transactions
-- Schedule reminders using `ScheduledExecutorService`
-- Import/export `.csv` files
-- Full test coverage with JUnit + Mockito
-- CI/CD via GitHub Actions
+## 📦 Features
 
-## Project Structure
+- ✅ Create/delete accounts
+- ✅ Record income and expense transactions
+- ✅ Automated balance calculation
+- ✅ Monthly summaries & reports
+- ✅ Scheduled reminders for due dates
+- ✅ Import/export `.csv` files
+- ✅ Configurable via `app.properties`
+- ✅ Unit tested with JUnit + Mockito
+- ✅ CI/CD via GitHub Actions
 
-com.finance 
+---
 
-├── domain # Entities: Account, Transaction
+## 🧱 Architecture Overview
 
-├── service # Business logic layer 
+CLI 
 
-├── repository # File-based persistence 
+└── Service Layer 
 
-├── strategy # Income/Expense logic 
+└── Domain Layer 
 
-├── cli # Command line interface 
+└── Repository Layer 
 
-## To Run
+└── Strategy, Factory, Notification, Config, Utils 
 
-mvn clean compile java -cp target/classes com.finance.Main
+└── DI Layer (AppContext)
 
-## Test
 
-mvn test
+Built with clean layering and full separation of concerns.  
+[📸 View architecture diagram](Layers.png) ← (link your diagram file)
+
+---
+
+## 🚀 How to Run
+
+```bash
+mvn clean compile
+java -cp target/classes com.finance.Main
