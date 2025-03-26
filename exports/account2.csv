@@ -1,0 +1,4 @@
+id,accountId,description,date,amount
+null,2,rent,2025-03-26,600.00
+null,2,rent,2025-03-26,-700.00
+null,2,msnms,2025-03-26,2000.00
